@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ecolin <ecolin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 19:26:58 by elise             #+#    #+#             */
-/*   Updated: 2022/12/16 11:31:35 by elise            ###   ########.fr       */
+/*   Updated: 2022/12/16 17:33:38 by ecolin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,12 @@ int main()
         club.setType("some other type of club");
         jim.attack();
     }
+	{
+		HumanB patrick("Patrick");
+		patrick.attack();
+		Weapon dangerous = Weapon("rude comments");
+		patrick.setWeapon(dangerous);
+		patrick.attack();
+	}
     return 0;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ecolin <ecolin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 19:42:57 by elise             #+#    #+#             */
-/*   Updated: 2022/12/16 11:31:52 by elise            ###   ########.fr       */
+/*   Updated: 2022/12/16 17:24:46 by ecolin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ void   Weapon::setType(std::string type)
 
 Weapon::Weapon()
 {
-    
+	
 }
