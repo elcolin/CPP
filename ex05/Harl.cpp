@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ecolin <ecolin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 17:12:57 by ecolin            #+#    #+#             */
-/*   Updated: 2022/12/17 17:48:51 by ecolin           ###   ########.fr       */
+/*   Updated: 2022/12/19 18:07:42 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,12 @@ void	Harl::error(void)
 
 void	Harl::complain(std::string level)
 {
+	std::string	gravity[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	void	(Harl::*complaints[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	for (int i = 0; i < 4; i++)
+	{
+		if (level == gravity[i])
+			(this->*complaints[i])();
+	}
 	
 }

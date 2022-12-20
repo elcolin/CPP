@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ecolin <ecolin@student.42.fr>              +#+  +:+       +#+         #
+#    By: elise <elise@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/17 17:09:01 by ecolin            #+#    #+#              #
-#    Updated: 2022/12/17 17:09:56 by ecolin           ###   ########.fr        #
+#    Updated: 2022/12/19 17:21:14 by elise            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
 
 NAME = a.out
 
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 
 SOBJ = $(SRC:.cpp=.o)
 
